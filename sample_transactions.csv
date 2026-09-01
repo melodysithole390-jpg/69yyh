@@ -1,0 +1,19 @@
+transaction_id,date,transaction_type,category,description,net_amount,has_fiscal_invoice,taxable_use_pct,vat_withheld,notes
+S-0001,2025-12-10,sale,standard_sale,Standard retail sale (15% rate still in force),1000,True,100,0,
+S-0002,2026-01-20,sale,standard_sale,Standard retail sale (15.5% rate in force),2000,True,100,0,
+S-0003,2026-02-05,sale,zero_rated_sale,Export of maize to South Africa,5000,True,100,0,Zero-rated export under s.10
+S-0004,2026-02-06,sale,exempt_sale,Commercial residential rental income,3000,True,100,0,Exempt per Schedule 2
+S-0005,2026-02-07,sale,deemed_supply,Fringe benefit - company car used privately,800,True,100,0,
+S-0006,2026-02-08,sale,bad_debt_recovered,Bad debt written off in 2024 now recovered,1200,True,100,0,
+S-0007,2026-02-09,sale,standard_sale,Sale to a VAT Withholding Agent customer,1500,True,100,200,VAT withheld 1/3 by WHT agent
+P-0001,2026-01-15,purchase,standard_purchase,Inventory purchase from local supplier,1000,True,100,0,
+P-0002,2026-02-10,purchase,import,Imported raw materials - Bill of Entry,2000,True,100,0,VAT paid at customs
+P-0003,2026-02-11,purchase,zero_rated_purchase,Zero-rated raw material purchase,500,True,100,0,
+P-0004,2026-02-12,purchase,standard_purchase,Office furniture - mixed taxable/exempt use,1000,True,50,0,50% taxable use apportionment
+P-0005,2026-02-13,purchase,denied_entertainment,Client entertainment - luxury lodge,600,True,100,0,Denied s.16(2)(c)
+P-0006,2026-02-14,purchase,denied_passenger_vehicle,Purchase of company passenger vehicle,15000,True,100,0,Denied s.16(2)(a)
+P-0007,2026-02-15,purchase,denied_club_subscription,Golf club membership subscription,400,True,100,0,Denied s.16(2)(d)
+P-0008,2026-02-16,purchase,denied_no_fiscal_invoice,Cash purchase without valid fiscal tax invoice,300,False,100,0,No FTI - claim denied
+P-0009,2026-02-17,purchase,bad_debt_relief,Purchase deemed written off debt >12 months unpaid,800,True,100,0,
+P-0010,2026-02-18,purchase,credit_note_received,Supplier credit note for returned goods,250,True,100,0,Reverses prior input tax
+P-0011,2026-02-19,purchase,standard_purchase,Marketing services - full taxable use,900,True,100,0,
